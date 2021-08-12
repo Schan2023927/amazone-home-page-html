@@ -36,6 +36,9 @@ body{
         background-color: var(--background-nav);
         padding:5px 10px;
         align-items: center;
+        position: sticky;
+        top:0;
+        z-index: 100;
     }
     nav .nav_brand a img{
         width: 100px;
