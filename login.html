@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GalacticSignIn - Account Login</title>
+    <link rel="stylesheet" href="path/to/styles.css"> <!-- Add the path to your styles.css file -->
+    <!-- Additional styles for the login page -->
+    <style>
+        body {
+            background-color: #0c0c0c;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .login-container {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        h1 {
+            color: #FFD700; /* Gold color for the header */
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .recaptcha-container {
+            margin-bottom: 15px;
+        }
+
+        button {
+            background-color: #FFD700; /* Gold color for the button */
+            color: #000;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #FFA500; /* Orange color on hover */
+        }
+
+        .forgot-link {
+            color: #fff;
+            text-decoration: underline;
+            margin: 10px 0;
+            display: block;
+        }
+
+        .terms-checkbox {
+            margin-bottom: 10px;
+        }
+
+        .signup-link {
+            color: #FFD700;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-container">
+        <h1>GalacticSignIn</h1>
+        <form action="login_process.php" method="post"> <!-- Replace with your login processing script -->
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <div class="recaptcha-container">
+                <!-- Add your reCAPTCHA integration code here -->
+                <!-- Example: <div class="g-recaptcha" data-sitekey="your-site-key"></div> -->
+            </div>
+
+            <button type="submit">Sign In</button>
+
+            <a href="#" class="forgot-link">Forgot Password / Forgot Username</a>
+
+            <div class="terms-checkbox">
+                <input type="checkbox" id="termsCheckbox" name="termsCheckbox" required>
+                <label for="termsCheckbox">I agree to the <a href="#" target="_blank">Terms and Conditions</a></label>
+            </div>
+
+            <p>Don't have an account? <a href="https://voilora.com/account/Signup" class="signup-link">Sign Up</a></p>
+        </form>
+    </div>
+
+    <!-- Include the reCAPTCHA script -->
+    <!-- Example: <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
+</body>
+
+</html>
